@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Generator</title>
+	<link rel="shortcut icon" href="img/logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="fonts awesome/fonts/style.css">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,">
+</head>
+<body>
+	<div class="contenedor">
+
+	<div class="logo">
+	 <h1>Password Generator</h1>
+	</div>
+
+	<form action="" class="app" id="app">
+
+<div class="fila numero-caracteres">
+
+<div class="col">
+<label form="numero-caracteres">Numero de caracteres</label>
+</div>
+
+<div class="col botones">
+
+	<div>
+<button class="btn" id="btn-menos-uno"><i class="icon-minus"></i></button>
+	</div>
+
+<input type="text" id="numero-caracteres" readonly value="16">
+	
+<button class="btn" id="btn-mas-uno"><i class="icon-plus"></i></button>
+</div>
+</div>
+
+
+<div class="fila simbolos">
+
+<div class="col ">
+	<label form="simbolos">¿Incluir Simbolos?</label>
+</div>
+
+
+<div class="col botones">
+<button class="btn" id="btn-simbolos"><i class="icon-checkmark"></i></button>
+</div>
+
+</div>
+<div class="fila numeros">
+<div class="col">
+	<label form="numeros">¿Incluir Numeros?</label>
+</div>
+<div class="col">
+<button class="btn" id="btn-numeros"><i class="icon-checkmark"></i></button>
+</div>
+</div>
+
+<div class="fila mayusculas">
+<div class="col">
+	<label form="mayusculas">¿Incluir Mayusculas?</label>
+</div>
+
+<div class="col">
+<button class="btn" id="btn-mayusculas"><i class="icon-checkmark"></i></button>
+</div>
+</div>
+
+
+
+
+<div class="fila generar">
+
+	<div class="col">
+<button class="btn btn-generar" id="btn-generar">Generar <i class="icon-lock"></i></button>
+</div>
+
+
+<div class="col">
+
+	<input type="text" class="input-password" id="input-password" readonly value="">
+	<div class="alerta-copiado " id="alerta-copiado">
+			<p>Texto copiado<i class="icon-copy"></i></p>
+		</div>	
+</div>
+</div>
+
+		
+
+
+
+<p class="footer" style="text-align: center; margin-top: 10%;          color:rgba(255,255,255,.0,); font-size:16px;">© 2020 Rodrigo Salazar</p>
+	
+</form>
+
+</div>
+
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
